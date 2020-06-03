@@ -4,6 +4,8 @@
 - 网址：[https://www.xftsoft.com/](https://www.xftsoft.com/)
 - 下载：[https://www.xftsoft.com/Download](https://www.xftsoft.com/Download)
 
+![xft](https://xftsoft.github.io/static/image/xft.png)
+
 ## 软件四大功能
 
 - [x] 整站下载
