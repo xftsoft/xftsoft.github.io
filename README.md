@@ -1,8 +1,7 @@
 ## 小飞兔下载
 
 - 小飞兔整站下载是一款只需输入一个网址就能下载一个网站的软件，它可以从Internet下载你想要的网页，主要是用来快速搭建网站、深层分析网站、网站克隆、离线浏览等。
-- 网址：[https://www.xftsoft.com/](https://www.xftsoft.com/)
-- 下载：[https://www.xftsoft.com/Download](https://www.xftsoft.com/Download)
+- 下载地址：[https://www.xftsoft.com/Download](https://www.xftsoft.com/Download)
 
 ![xft](https://xftsoft.github.io/static/image/xft.png)
 
