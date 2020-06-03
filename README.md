@@ -1,4 +1,4 @@
-# 软件介绍
+## 小飞兔下载
 
 - 小飞兔整站下载是一款只需输入一个网址就能下载一个网站的软件，它可以从Internet下载你想要的网页，主要是用来快速搭建网站、深层分析网站、网站克隆、离线浏览等。
 - 网址：[https://www.xftsoft.com/](https://www.xftsoft.com/)
@@ -15,7 +15,7 @@
 
 - 转换网站编码、自定义特殊标签、内置浏览器可视化操作、简繁互转、英文网页翻译、批量替换删除代码等
 
-# 运行环境
+## 运行环境
 
 - windows7以上、Microsoft .NET Framework 4.6以上
 - 检查运行环境：`cmd`运行`reg query "HKLM\Software\Microsoft\NET Framework Setup\NDP" /s /v version | findstr /i version | sort /+26 /r`
