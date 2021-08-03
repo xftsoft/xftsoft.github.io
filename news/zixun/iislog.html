@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html">
+    <title>Introduction and function of IIS log - flying rabbit site management</title>
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" href="https://iis.xftsoft.com/favicon.ico">
+    
+    
+
+    <link rel="stylesheet" href="../../static/css/bootstrap.min1.css">
+    <link rel="stylesheet" href="../../static/css/body1.css">
+    <link rel="stylesheet" href="../../static/css/drawer.min.css">
+    <link rel="stylesheet" href="../../static/css/animate.min.css">
+    <link rel="stylesheet" href="../../static/css/iconfont1.css">
+    <link rel="stylesheet" href="../../static/css/default1.css">
+    <link rel="stylesheet" href="../../static/css/mobile1.css">
+
+    
+    <link href="../../static/css/github-markdown.css" rel="stylesheet">
+    <style>
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        @media (max-width: 767px) {
+        .markdown-body {
+            padding: 15px;
+        }
+        }
+        </style>
+
+</head>
+
+<body class="drawer drawer--right">
+    <div class="topfix">
+        <div class="topfix1200">
+            <label>Sub station navigation:</label>
+            <a href="../../index.html">Flying rabbit Download</a>
+            <span>|</span>
+            <a href="../../index1.html">Flying rabbit site management</a>
+        </div>
+    </div>
+<div id="tipMsg" style="display: none;"></div> 
+
+    <header role="banner" class="nav" style="display: none;">
+    <button type="button" class="drawer-toggle drawer-hamburger">
+        <span class="sr-only">toggle navigation</span>
+        <span class="drawer-hamburger-icon"></span>
+    </button>
+    <nav class="drawer-nav" role="navigation">
+        <ul class="drawer-menu">
+            <li><a class="drawer-menu-item" href="../../index1.html"><i class="iconfont iconshouye"></i>home</a></li>
+            <li><a class="drawer-menu-item" href="../index1.html"><i class="iconfont iconxinwen"></i>News</a></li>
+            <li><a class="drawer-menu-item" href="../../buy1.html"><i class="iconfont icongoumai"></i>Open member</a></li>
+            <li><a class="drawer-menu-item" href="../../login1.html"><i class="iconfont iconservicenum"></i>Member login</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="top w1200">
+    <div class="top_a fl">
+        <a href="../../index1.html"></a>
+    </div>
+    <div class="top_b fr">
+        <ul class="fl">
+            <li>
+                <a href="../../index1.html">home</a>
+            </li>
+            <li>
+                <a href="../index1.html">News</a>
+            </li>
+            <li>
+                <a href="../../buy1.html">Open member</a>
+            </li>
+            <li>
+                <a href="../../login1.html">Member login</a>
+            </li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+</div>
+
+
+    
+
+
+
+
+<div class="pathBody">
+    <div class="path">
+        <i class="iconfont iconshouye"></i><a href="../../index1.html">home</a><i class="iconfont iconyoujiantou"></i><a href="index1.html">Relevant information</a><i class="iconfont iconyoujiantou"></i><span>Introduction and function of IIS log</span>
+    </div>
+</div>
+
+<div class="container w1200 bodycontent">
+    <div class="row">
+        <div class="col-md-12 newlist newsCategory">
+                    <a href="../jiaocheng/index1.html"><i class="iconfont icontubiao-"></i><span>Software tutorial</span></a>
+                    <a href="index1.html"><i class="iconfont icontubiao-"></i><span>Relevant information</span></a>
+
+        </div>
+        <div class="col-md-12 newlist">
+            <div class="newsboth">
+                <div class="newsTitle"><i class="iconfont iconfenlei1" style="font-size: 16px;margin-right: 8px;"></i>Introduction and function of IIS log</div>
+                <div class="newsbody newsbodymb markdown-body">
+                    <blockquote>
+<p>I believe many webmasters or SEOs know the existence of IIS log, but many people don&#39;t pay attention to it, because we can query some basic data of the website through webmaster tools. Why look at IIS log?</p>
+</blockquote>
+<h4 id="1、iis日志是什么？">1. What is IIS log?</h4>
+<p>IIS log is mainly used to record the access behavior of users and search engine spiders to the website. In short, website IIS log refers to recording the behavior status code of various search engine spiders visiting and grabbing the website, and generating IIS log in the form of file.</p>
+<p>We can let us know the records of spider visits through IIS logs, and let us know the dead links and return status codes of the website, so that we can timely analyze the collection and snapshot update of the website.</p>
+<h4 id="2、iis日志的作用">2. Role of IIS logs</h4>
+<p>(1) Through the IIS log, you can understand the basic crawling situation of the spider to the website, and you can know the crawling track and amount of the spider. Through our IIS log, the amount of the external chain has a direct impact on the crawling amount of the website spider. The link bait we call is that if you make an external chain, when the spider crawls the external chain page and releases the page, The spider can crawl your website through the link you left, and the IIS log will record the spider&#39;s crawling action.</p>
+<p>(2) The update frequency of the website is also related to the frequency of spider crawling in the IIS log. Generally speaking, the higher the update frequency, the higher the spider crawling frequency. The update of our website is not only the addition of new content, but also our fine-tuning operation.</p>
+<p>(3) We can give early warning of some things and problems in our space according to the response of IIS logs, because if there is a problem with the server, it will be reflected in IIS logs for the first time. We should know that both the stable speed and opening speed of the server will directly affect our website.</p>
+<p>(4) Through IIS logs, we can analyze which pages of the website are very popular with spiders, and which pages are not even touched by spiders. At the same time, we can also find that some spiders have a great loss of our server resources due to excessive crawling. We need to screen them.</p>
+<h4 id="3、通过iis日志我们能知道些什么？">3. What can we know from IIS logs?</h4>
+<p>(1) Whether the external chain we send has an effect?</p>
+<p>(2) Is the space we buy stable?</p>
+<p>(3) What pages do spiders like more than others?</p>
+<p>(4) When do spiders grab our website frequently and when do we need to update the content?</p>
+<p>(5) Which search engines like our website content (for details, see Ma Haixiang&#39;s blog &quot;interpretation of search engine spider name code and crawling return code in IIS log&quot;)?</p>
+<p>(6) Are there hidden dead links and wrong links in the website?</p>
+<p>We can simply analyze these problems through our server IIS log, and these data can not be accurately tested by ordinary SEO tools.</p>
+<p>4. How do I download IIS log files?</p>
+<p>First of all, our space should support IIS log download, which is very important. Before we buy space, we must first say hello. Support does not support IIS log download, because some service providers do not provide this service.</p>
+<p>In indows2003 environment, the default storage path of IIS logs is C: \ windows \ system32 \ logfiles \. Under the logfiles folder, there are multiple IIS log folders, and each IIS log folder corresponds to a site log.</p>
+<p>If the IIS local folder is not configured, you can go to the space to download. Generally, the space is placed in the log folder of the root directory by default, and the IIS log is a text file with the suffix log.</p>
+<h4 id="5、定期的删除多余的iis日志文件">5. Delete redundant IIS log files regularly</h4>
+<p>Many webmasters using Windows IIS may encounter this problem, that is, the growth of IIS logs on the server will often lead to full disk space. If the server administrator does not store large files on Disk C and the site access in IIS is very large, 90% of the disk capacity of Disk C is occupied by IIS log files.</p>
+<p>The default storage path for IIS log files is C: \ windows \ system32 \ logfiles. We open &quot;my computer&quot;, drive C, windows folder, system32 folder and logfiles folder in turn. We find that there are multiple subfolders in it, and each folder corresponds to an IIS site.</p>
+<h4 id="6、如何修改iis日志文件路径？">6. How to modify IIS log file path?</h4>
+<p>(1) Enter the &quot;Internet Information Service (IIS) manager&quot; console interface, as shown in the following figure, right-click the &quot;website&quot; item on the left of the console to open the &quot;website properties&quot; setting window.</p>
+<p>(2) In the &quot;website&quot; tab, select the check box before &quot;enable logging&quot;, and then click the &quot;apply&quot; button to make the settings effective and enable the logging function of the website.</p>
+<p>(3) Continue the configuration, set the &quot;activity log format (V)&quot; to &quot;W3C extended log file format&quot;, and then click the &quot;properties&quot; button to configure the logging properties, so as to modify the path of IIS log file.</p>
+<p>In addition, there is a very important problem. Ma Haixiang strongly recommends that IIS logs be generated every hour. Small enterprise stations and websites with less page content can be set to one day. It defaults to one day. If there are many contents or large stations are set to generate once a day, only one file will be generated a day, which will be quite large, Sometimes when the computer is turned on, it will cause crash. If you set it, you can find a space provider to coordinate the setting.</p>
+
+
+                    <div style="padding-top: 20px;border-top: 1px dotted #F44336;    margin-top: 28px;">
+                                <div>
+                                    <span>Previous:</span><a href="iis-sites.html">How does the IIS server publish multiple domain names and websites over the same IP?</a>
+                                </div>
+
+                                <div>
+                                    <span>Next:</span><a href="iisss.html">How do DOS commands start and stop IIS?</a>
+                                </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+    
+
+<div class="clear"></div>
+
+<div class="footer">
+    <div class="w1200">
+        <div class="footer_b">
+            <div class="footer_ba fl">
+                <div>Software application: install IIS server, create website running environment with one click, batch manage website / site backup / site migration.</div>
+                <div>Applicable personnel: Web entry users, web front end, server management</div>
+                <div class="mzsm">Software statement: the software is safe, non-toxic and free of advertising. It can be used safely, but it shall comply with the provisions of copyright law and other relevant laws and shall not infringe the legitimate rights of the software and relevant obligees.</div>
+                <div>Copyright  &#169;  2019-2020 all rights reserved<a href="/" target="_blank" style="color: #8e8e8f;">Yue ICP Bei No. 19111427-2</a>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+<div id="kefuGajian"></div> 
+
+
+    <script src="../../static/js/jquery-3.3.1.min.js"></script>
+    <script src="../../static/js/chunck.js"></script>
+    <script src="../../static/js/common1.js"></script>
+
+    
+            <script>
+                $(function() {
+                    $.post('/api/Count/News/55450000-0064-5254-bf1e-08d9352dea6c');
+                });
+            </script>
+
+
+<div style="display: none;">
+    
+</div> 
+</body>
+</html>

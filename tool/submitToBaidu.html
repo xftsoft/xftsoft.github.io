@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html">
+    <title>Baidu included website submission tool | submit website to Baidu included | Baidu API submission tool</title>
+    <meta name="Keywords" content="Ordinary collection, API submission, website submission to Baidu, baidu submission tool">
+    <meta name="Description" content="API push: the fastest submission method. It is recommended that you immediately push the new output links of the site to Baidu in this way to ensure that the new links can be included by Baidu in time. Timely discovery: it can shorten the time for Baidu crawler to find new links in your site, so that the newly released pages can be included by Baidu at the first time. Protect originality: for the latest original content of the website, use the API push function to quickly notify Baidu, so that the content can be found by Baidu before forwarding">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" href="https://www.xftsoft.com/favicon.ico">
+    
+    
+
+    <link href="../static/css/tool.css" rel="stylesheet">
+    
+    <style>
+        .tipmsg {
+            float: right;
+            margin-right: 250px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="topHeader divcenter">
+    <div class="next">
+        <a href="../index.html">home</a>
+        <a href="integrity.html">Integrity generator</a>
+        <a href="">Baidu included website submission tool</a>
+        <a href="verificationImage.html">Identify the real extension of the picture</a>
+        <a href="siteUrl.html">Whole site URL generator</a>
+    </div>
+</div>
+
+    
+
+
+
+
+<div class="divcenter">
+    <div class="title">Baidu included website submission tool (API push)</div>
+</div>
+
+<div class="divcenter">
+    <div class="content">
+        <form action="/tool/submitToBaidu" method="post">
+            <div class="divrow clearfix">
+                <div class="divrow1">Interface call address:</div>
+                <div class="divrow2">
+                    <input type="text" class="control w50" id="add" name="add" placeholder="http://data.zz.baidu.com/urls?site=您的网址&token=百度API提交密钥">
+                    <a class="tip tipmsg" href="#doc3">Where is the address??? Refer to Clause 3 below</a>
+                </div>
+            </div>
+            <div class="divrow clearfix">
+                <div class="divrow1">Website of submission and collection:</div>
+                <div class="divrow2">
+                    <textarea class="control w75 h180" id="urls" name="urls" placeholder="每一条网址一行，如：
+http://www.xxx.com/index.html
+http://www.xxx.com/list.html
+
+提交的网站必须与接口调用的site参数域名一致
+单批次提交最多1000条网址"></textarea>
+                </div>
+            </div>
+            <div class="divrow clearfix">
+                <div class="divrow1"></div>
+                <div class="divrow2">
+                    <button type="submit" id="btnPost" class="control">Submit now</button>
+                    <a class="tip tipmsg" href="#doc4">Generate whole website address?? Refer to Clause 4 below</a>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+    <div class="remark">
+        <div class="reRow">
+            <div class="reamrkTitle">1. What are the submission methods of Baidu?</div>
+            <div class="remarkContent">
+                <div>
+                    <b>API push:</b>The fastest submission method, it is recommended that you immediately push the new output links of the site to Baidu in this way, so as to ensure that the new links can be included by Baidu in time.</div>
+                <div>
+                    <b>sitemap：</b>You can regularly put the website link into the sitemap, and then submit the sitemap to Baidu. Baidu will periodically grab and check the sitemap you submitted and process the links, but the collection speed is slower than API push.</div>
+                <div>
+                    <b>Manual submission:</b>If you don&#39;t want to submit through the program, you can manually submit the link to Baidu in this way.</div>
+            </div>
+        </div>
+        <div class="reRow">
+            <div class="reamrkTitle">2. What is the effect of using API push function?</div>
+            <div class="remarkContent">
+                <div><b>Timely discovery:</b>It can shorten the time when Baidu crawler finds new links to your site, so that the newly released pages can be included by Baidu at the first time</div>
+                <div><b>Protect original:</b>For the latest original content of the website, using the API push function can quickly notify Baidu, so that the content can be found by Baidu before forwarding</div>
+            </div>
+        </div>
+        <div class="reRow">
+            <div class="reamrkTitle" id="doc3">3. Where is the interface call address?</div>
+            <div class="remarkContent">
+                <div>Open Baidu address:<a class="blue" href="/" target="_blank">https://ziyuan.baidu.com/linksubmit/index</a>, if you have not registered, please register your baidu account first, add a site and verify the site after registration, and then open the front website to see the push interface address, as shown in the figure:<a href="../static/picture/baidusubmit.png" class="blue" target="_blank">Click open</a>, copy the interface call address to the text box above.</div>
+            </div>
+        </div>
+        <div class="reRow">
+            <div class="reamrkTitle" id="doc4">4. Generate and submit included URL?</div>
+            <div class="remarkContent">
+                <div>
+                    <b>Download the tool to generate included website:</b><a href="/" rel="nofollow" target="_blank" class="blue">.. / files / little flying rabbit download.html</a>
+                </div>
+                <div><b>Operating instructions:</b>Unzip the software to the folder and open the software. There is an SEO tool in the lower left corner of the software. The pop-up list has a function called generating the website of the whole station. Click it to enter the interface of generating the website of the whole station, enter the home address, and then start downloading and generating all the websites of the whole station.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+
+<div class="footer">Copyright  &#169; Flying rabbit tools 2019-2021</div>
+
+        <link href="../static/css/kefu.css" rel="stylesheet">
+        <div id="kefuGajian"></div>
+
+
+    <script src="../static/js/jquery-3.3.1.min.js"></script>
+    <script src="../static/js/tool.js"></script>
+
+    
+    <script>
+        $(function () {
+            $("#btnPost").on("click",
+                function () {
+                    if ($("#add").val() === "") {
+                        $("#add").focus();
+                        return false;
+                    }
+                    if ($("#urls").val() === "") {
+                        $("#urls").focus();
+                        return false;
+                    }
+                    return true;
+                });
+        });
+    </script>
+
+            <script>
+                $(function () {
+                    if ($('#add').val() === '') {
+                        var v = window.localStorage.getItem('submitToBaiduAdd');
+                        if (v !== null && v !== '') {
+                            $('#add').val(v);
+                        }
+                    }
+                });
+            </script>
+
+
+            <div style="display: none;">
+                
+            </div>
+
+</body>
+</html>

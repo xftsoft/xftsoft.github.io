@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font-family: Microsoft Yahei;
+    color: #333;
+}
+
+body {
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    /* Fix for webkit rendering */
+    -webkit-text-size-adjust: 100%;
+    /* Fix for webkit minFont size */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    /* Remove highlight on tap event*/
+    -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+    -ms-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-size: 14px;
+    width: 100%;
+    background: #fff;
+}
+
+.w100 {
+    width: 100% !important;
+}
+
+.w75 {
+    width: 75% !important;
+}
+
+.w50 {
+    width: 50% !important;
+}
+
+.w25 {
+    width: 25% !important;
+}
+
+.h20 {
+    height: 20px !important;
+}
+
+.h25 {
+    height: 25px !important;
+}
+
+.h30 {
+    height: 30px !important;
+}
+
+.h35 {
+    height: 35px !important;
+}
+
+.h50 {
+    height: 50px !important;
+}
+
+.h80 {
+    height: 80px !important;
+}
+
+.h120 {
+    height: 120px !important;
+}
+
+.h180 {
+    height: 180px !important;
+}
+
+.ml10 {
+    margin-left: 10px;
+}
+
+.ml20 {
+    margin-left: 20px;
+}
+
+.tip {
+    color: #9e9e9e;
+}
+
+.red {
+    color: #c00;
+}
+
+.blue {
+    color: blue;
+}
+a {
+    color: #222;
+    text-decoration-line: none;
+}
+
+    a:hover {
+        color: #c00;
+    }
+
+    a:active {
+        color: #222;
+    }
+
+select.control {
+    border: 1px solid #ccc;
+    padding: 2px 3px;
+    border-radius: 2px;
+}
+
+input.control {
+    border: 1px solid #ccc;
+    padding: 3px 5px;
+    border-radius: 2px;
+    width: 70%;
+}
+
+textarea.control {
+    border: 1px solid #ccc;
+    padding: 2px 3px;
+    border-radius: 2px;
+    width: 70%;
+}
+
+button.control {
+    border: 1px solid #ccc;
+    padding: 3px 18px;
+    border-radius: 2px;
+    cursor: pointer;
+    background: #2196F3;
+    color: #fff;
+    border-radius: 2px;
+    outline: none;
+}
+
+.success {
+    color: #0c0;
+}
+
+.warning {
+    color: #ff9800;
+}
+
+.fs16 {
+    font-size: 16px !important;
+}
+
+.fs18 {
+    font-size: 18px !important;
+}
+
+.fwb {
+    font-weight: bold !important;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.topHeader {
+    height: 30px;
+    line-height: 30px;
+    background: #2196F3;
+    box-shadow: inset 0px 0px 6px 1px #2196F3;
+}
+
+    .topHeader .next a {
+        margin-right: 12px;
+        color: #fff;
+    }
+
+.divcenter {
+    text-align: center;
+}
+
+    .divcenter .next {
+        width: 1200px;
+        text-align: left;
+        margin: 0 auto;
+    }
+
+    .divcenter .content {
+        width: 1200px;
+        text-align: left;
+        margin: 0 auto;
+        padding: 12px 0;
+    }
+
+    .divcenter .remark {
+        width: 900px;
+        text-align: left;
+        margin: 0 auto;
+        padding: 80px 150px;
+        line-height: 30px;
+    }
+
+        .divcenter .remark .reRow {
+            margin-bottom: 18px;
+        }
+
+            .divcenter .remark .reRow .reamrkTitle {
+                font-size: 16px;
+                font-weight: bold;
+            }
+            .divcenter .remark .reRow .remarkContent {
+                font-size: 14px;
+                padding: 0 28px;
+            }
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    padding: 18px;
+    border-bottom: 1px solid #ccc;
+}
+
+.divrow {
+    line-height: 25px;
+    padding: 5px;
+}
+
+    .divrow .divrow1 {
+        display: inline-block;
+        width: 188px;
+        padding-right: 12px;
+        float: left;
+        text-align: right;
+        height: 1px;
+    }
+
+    .divrow .divrow2 {
+        float: left;
+        text-align: left;
+        width: 990px;
+    }
+
+.error {
+    color: #c00;
+}
+
+.footer {
+    text-align: center;
+    padding: 12px;
+    border-top: 1px solid #eee;
+    color: #888;
+}
+
+    .footer a {
+        color: #888;
+    }
+
+        .footer a:hover {
+            color: blue;
+        }

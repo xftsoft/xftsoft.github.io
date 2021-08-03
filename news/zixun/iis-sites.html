@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html">
+    <title>How does the IIS server publish multiple domain names and websites over the same IP- Flying rabbit site management</title>
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" href="https://iis.xftsoft.com/favicon.ico">
+    
+    
+
+    <link rel="stylesheet" href="../../static/css/bootstrap.min1.css">
+    <link rel="stylesheet" href="../../static/css/body1.css">
+    <link rel="stylesheet" href="../../static/css/drawer.min.css">
+    <link rel="stylesheet" href="../../static/css/animate.min.css">
+    <link rel="stylesheet" href="../../static/css/iconfont1.css">
+    <link rel="stylesheet" href="../../static/css/default1.css">
+    <link rel="stylesheet" href="../../static/css/mobile1.css">
+
+    
+    <link href="../../static/css/github-markdown.css" rel="stylesheet">
+    <style>
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        @media (max-width: 767px) {
+        .markdown-body {
+            padding: 15px;
+        }
+        }
+        </style>
+
+</head>
+
+<body class="drawer drawer--right">
+    <div class="topfix">
+        <div class="topfix1200">
+            <label>Sub station navigation:</label>
+            <a href="../../index.html">Flying rabbit Download</a>
+            <span>|</span>
+            <a href="../../index1.html">Flying rabbit site management</a>
+        </div>
+    </div>
+<div id="tipMsg" style="display: none;"></div> 
+
+    <header role="banner" class="nav" style="display: none;">
+    <button type="button" class="drawer-toggle drawer-hamburger">
+        <span class="sr-only">toggle navigation</span>
+        <span class="drawer-hamburger-icon"></span>
+    </button>
+    <nav class="drawer-nav" role="navigation">
+        <ul class="drawer-menu">
+            <li><a class="drawer-menu-item" href="../../index1.html"><i class="iconfont iconshouye"></i>home</a></li>
+            <li><a class="drawer-menu-item" href="../index1.html"><i class="iconfont iconxinwen"></i>News</a></li>
+            <li><a class="drawer-menu-item" href="../../buy1.html"><i class="iconfont icongoumai"></i>Open member</a></li>
+            <li><a class="drawer-menu-item" href="../../login1.html"><i class="iconfont iconservicenum"></i>Member login</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="top w1200">
+    <div class="top_a fl">
+        <a href="../../index1.html"></a>
+    </div>
+    <div class="top_b fr">
+        <ul class="fl">
+            <li>
+                <a href="../../index1.html">home</a>
+            </li>
+            <li>
+                <a href="../index1.html">News</a>
+            </li>
+            <li>
+                <a href="../../buy1.html">Open member</a>
+            </li>
+            <li>
+                <a href="../../login1.html">Member login</a>
+            </li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+</div>
+
+
+    
+
+
+
+
+<div class="pathBody">
+    <div class="path">
+        <i class="iconfont iconshouye"></i><a href="../../index1.html">home</a><i class="iconfont iconyoujiantou"></i><a href="index1.html">Relevant information</a><i class="iconfont iconyoujiantou"></i><span>How does the IIS server publish multiple domain names and websites over the same IP?</span>
+    </div>
+</div>
+
+<div class="container w1200 bodycontent">
+    <div class="row">
+        <div class="col-md-12 newlist newsCategory">
+                    <a href="../jiaocheng/index1.html"><i class="iconfont icontubiao-"></i><span>Software tutorial</span></a>
+                    <a href="index1.html"><i class="iconfont icontubiao-"></i><span>Relevant information</span></a>
+
+        </div>
+        <div class="col-md-12 newlist">
+            <div class="newsboth">
+                <div class="newsTitle"><i class="iconfont iconfenlei1" style="font-size: 16px;margin-right: 8px;"></i>How does the IIS server publish multiple domain names and websites over the same IP?</div>
+                <div class="newsbody newsbodymb markdown-body">
+                    <h3 id="总体介绍：">General introduction:</h3>
+<p>1. DNS add area and host;</p>
+<p>2. IIS add a site, configure the host header, and point to the regional host in step 1.</p>
+<h5 id="一、准备工作">1、 Preparation:</h5>
+<p>1. Install iis6.0,</p>
+<p>2. Install DNS components;</p>
+<p>If the above is not installed, please install it by adding or removing components of the removal program</p>
+<h5 id="二、在dns中添加区域，及主机">2、 Add zones and hosts to DNS</h5>
+<p>Turn on DNS. After turning on DNS,</p>
+<p>In DNS - &gt; Windows2003 - &gt; forward lookup zone, right-click the new zone to pop up the new zone Wizard dialog box. Next, the default next step. In the zone name, enter the website, such as baidu.com. Next, the default next step. Dynamic updates are not allowed. Next, the wizard is completed. At this time, we found baidu.com in the forward search area. OK, next, we right-click the baidu.com file and select new host. In the new host, add the name: WWW, IP address 192.168.1.1, and then select Add host. At this time, you can see another a record on the right.</p>
+<p>In the same step, create a Google region and a new host;</p>
+<h5 id="三、添加网站，并指定主机头（添加两个网站，分别指向第二步添加的两个主机）">3、 Add a website and specify the host header (add two websites, each pointing to the two hosts added in step 2)</h5>
+<p>Go to IIS and add a website. Next, we go back to our IIS information service manager again, find our Baidu website, and right-click properties.</p>
+<p>The IP address is 192.168.1.1 and the port is 80. Then click Advanced, select 192.168.1.1, select Edit, and enter in the host header value<a href="/">www.baidu.com</a></p>
+<p>The other two are the same configuration. I won&#39;t elaborate here.</p>
+
+
+                    <div style="padding-top: 20px;border-top: 1px dotted #F44336;    margin-top: 28px;">
+
+                                <div>
+                                    <span>Next:</span><a href="iislog.html">Introduction and function of IIS log</a>
+                                </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+    
+
+<div class="clear"></div>
+
+<div class="footer">
+    <div class="w1200">
+        <div class="footer_b">
+            <div class="footer_ba fl">
+                <div>Software application: install IIS server, create website running environment with one click, batch manage website / site backup / site migration.</div>
+                <div>Applicable personnel: Web entry users, web front end, server management</div>
+                <div class="mzsm">Software statement: the software is safe, non-toxic and free of advertising. It can be used safely, but it shall comply with the provisions of copyright law and other relevant laws and shall not infringe the legitimate rights of the software and relevant obligees.</div>
+                <div>Copyright  &#169;  2019-2020 all rights reserved<a href="/" target="_blank" style="color: #8e8e8f;">Yue ICP Bei No. 19111427-2</a>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+<div id="kefuGajian"></div> 
+
+
+    <script src="../../static/js/jquery-3.3.1.min.js"></script>
+    <script src="../../static/js/chunck.js"></script>
+    <script src="../../static/js/common1.js"></script>
+
+    
+            <script>
+                $(function() {
+                    $.post('/api/Count/News/55450000-0064-5254-1341-08d9352e5393');
+                });
+            </script>
+
+
+<div style="display: none;">
+    
+</div> 
+</body>
+</html>

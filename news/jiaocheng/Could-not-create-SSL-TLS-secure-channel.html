@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html">
+    <title>&quot;Request aborted: failed to create SSL / TLS secure channel&quot; reason and solution - little flying rabbit Download</title>
+    <meta name="Keywords" content="The request was aborted, failed to create SSL / TLS secure channel, could not create SSL / TLS secure channel">
+    <meta name="Description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" href="https://www.xftsoft.com/favicon.ico">
+    
+    
+
+    <link rel="stylesheet" href="../../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/css/body.css">
+    <link rel="stylesheet" href="../../static/css/drawer.min.css">
+    <link rel="stylesheet" href="../../static/css/animate.min.css">
+    <link rel="stylesheet" href="../../static/css/iconfont.css">
+    <link rel="stylesheet" href="../../static/css/default.css">
+    <link rel="stylesheet" href="../../static/css/mobile.css">
+
+    
+    <link href="../../static/css/github-markdown.css" rel="stylesheet">
+    <style>
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+
+        @media (max-width: 767px) {
+            .markdown-body {
+                padding: 15px;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body class="drawer drawer--right">
+            <div id="tipMsg" style="display: none;"></div>
+
+
+    <header role="banner" class="nav" style="display: none;">
+    <button type="button" class="drawer-toggle drawer-hamburger">
+        <span class="sr-only">toggle navigation</span>
+        <span class="drawer-hamburger-icon"></span>
+    </button>
+    <nav class="drawer-nav" role="navigation">
+        <ul class="drawer-menu">
+            <li><a class="drawer-menu-item" href="../../index.html"><i class="iconfont iconshouye"></i>home</a></li>
+            <li><a class="drawer-menu-item" href="../../product/index.html"><i class="iconfont iconproduct"></i>Products</a></li>
+            <li><a class="drawer-menu-item" href="../index.html"><i class="iconfont iconjiaocheng"></i>News</a></li>
+            <li><a class="drawer-menu-item" href="../../buy.html"><i class="iconfont icongoumai"></i>Buy professional</a></li>
+            <li><a class="drawer-menu-item" href="../../login.html"><i class="iconfont icondenglu"></i>Member login</a></li>
+            <li><a class="drawer-menu-item" href="../../page/customedition.html"><i class="iconfont icondingzhifangan"></i>Service</a></li>
+            <li><a class="drawer-menu-item" href="../../doc/index.html"><i class="iconfont iconxinwen"></i>Doc</a></li>
+            <li><a class="drawer-menu-item" href="../../page/contact.html"><i class="iconfont iconlianxi"></i>Contact us</a></li>
+            <li><a class="drawer-menu-item" href="https://www.xftsoft.com/" target="_blank"><i class="iconfont iconlianxi"></i>中文站</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="zzxz" class="top w1200">
+    <div class="top_a fl">
+        <a href="../../index.html"></a>
+    </div>
+    <div class="top_b fr">
+        <ul class="fl">
+            <li>
+                <a href="../../index.html">home</a>
+            </li>
+            <li>
+                <a href="../../product/index.html">Products</a>
+            </li>
+            <li>
+                <a href="../index.html">News</a>
+            </li>
+            <li>
+                <a href="../../buy.html">Buy professional</a>
+            </li>
+            <li>
+                <a href="../../login.html">Member login</a>
+            </li>
+            <li>
+                <a href="../../page/customedition.html">Service</a>
+            </li>
+            <li>
+                <a href="../../doc/index.html" target="_blank">Doc</a>
+            </li>
+            <li>
+                <a href="../../page/contact.html">Contact us</a>
+            </li>
+            <li>
+                <a href="https://www.xftsoft.com/" target="_blank">中文站</a>
+            </li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+</div>
+
+
+    
+
+
+
+
+<div class="pathBody">
+    <div class="path">
+        <i class="iconfont iconshouye"></i><a href="../../index.html">home</a><i class="iconfont iconyoujiantou"></i><a href="index.html">Software tutorial</a><i class="iconfont iconyoujiantou"></i><span>Reason and solution of &quot;request aborted: failed to create SSL / TLS secure channel&quot;</span>
+    </div>
+</div>
+
+<div class="container w1200 bodycontent">
+    <div class="row">
+        <div class="col-md-12 newlist newsCategory">
+                    <a href="index.html"><i class="iconfont icontubiao-"></i><span>Software tutorial</span></a>
+                    <a href="../zixun/index.html"><i class="iconfont icontubiao-"></i><span>Relevant information</span></a>
+
+        </div>
+        <div class="col-md-12 newlist">
+            <div class="newsboth">
+                <div class="newsTitle"><i class="iconfont iconfenlei1" style="font-size: 16px;margin-right: 8px;"></i>Reason and solution of &quot;request aborted: failed to create SSL / TLS secure channel&quot;</div>
+                <div class="newsbody newsbodymb markdown-body">
+                    <blockquote>
+<p>Description: request aborted: failed to create SSL / TLS secure channel. Could not create SSL/TLS secure channel。 Production platform: Windows Server 2012, Windows 7 Service Pack 1 (SP1) and Windows Server 2008 R2 SP1</p>
+</blockquote>
+<script src="../../static/js/content_text.js"></script>
+
+<h2 id="解决办法一：">Solution 1:</h2>
+<p>Set code before Httpwebrequest</p>
+<pre><code>ServicePointManager.Expect100Continue = true; ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls; ServicePointManager.ServerCertificateValidationCallback = (sender, certificate, chain, errors) =&gt; true;</code></pre>
+<h2 id="解决办法二">Solution 2</h2>
+<blockquote>
+<p>If the above method has no effect, it is a system level problem. Update the system patch according to the system you are using now</p>
+</blockquote>
+<p>Update to enable TLS 1.1 and TLS 1.2 as the default security protocol in winhttp in windows. This update provides support for transport layer security (TLS) 1.1 and TLS 1.2 in Windows Server 2012, Windows 7 Service Pack 1 (SP1) and Windows Server 2008 R2 Sp1. Refer to the official documentation<a href="/">/link?id=554500000064525498db08d90a346844</a></p>
+<h4 id="更新补丁kb3140245：httpwwwcatalogupdatemicrosoftcomsearchaspxqkb3140245">Update patch kb3140245:<a href="/">/link?id=5545000000645254993d08d90a346844</a></h4>
+<h4 id="在schannel组件级别的windows-7上启用tls-11和12-（采用以下任意一种更新）">Enable TLS 1.1 and 1.2 on Windows 7 at the schannel component level (with any of the following updates)</h4>
+<h5 id="方法一：使用微软更新安装包更新-microsofteasyfix51044msi">Method 1: update microsofteasyfix51044.msi with microsoft update package</h5>
+<ul>
+<li>Microsoft install update registry:<a href="/">/link?id=5545000000645254998a08d90a346844</a></li>
+</ul>
+<h5 id="方法二：手动更新注册表">Method 2: manually update the registry</h5>
+<blockquote>
+<p>Copy the following registry code and import it into the registry. Create a new TXT, change the suffix txt to reg (registry key), and import (backup before import)</p>
+</blockquote>
+<script src="../../static/js/content_text.js"></script>
+
+<h6 id="win7-64">WIN7 64</h6>
+<pre><code>[HKEY_ LOCAL_ MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp]&quot;DefaultSecureProtocols&quot;=dword:00000a00[HKEY_ LOCAL_ MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp]&quot;DefaultSecureProtocols&quot;=dword:00000a00[HKEY_ LOCAL_ MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings]&quot;SecureProtocols&quot;=dword:00000a80[HKEY_ CURRENT_ USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings]&quot;SecureProtocols&quot;=dword:00000a80</code></pre>
+<h6 id="windows-server">Windows Server</h6>
+<pre><code>[HKEY_ LOCAL_ MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp]&quot;DefaultSecureProtocols&quot;=dword:00000800[HKEY_ LOCAL_ MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Internet Settings\WinHttp]&quot;DefaultSecureProtocols&quot;=dword:00000800[HKEY_ LOCAL_ MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Client]&quot;DisabledByDefault&quot;=dword:00000000&quot;Enabled&quot;=dword:00000001[HKEY_ LOCAL_ MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.1\Server]&quot;DisabledByDefault&quot;=dword:00000000&quot;Enabled&quot;=dword:00000001[HKEY_ LOCAL_ MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Client]&quot;DisabledByDefault&quot;=dword:00000000&quot;Enabled&quot;=dword:00000001[HKEY_ LOCAL_ MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\TLS 1.2\Server]&quot;DisabledByDefault&quot;=dword:00000000&quot;Enabled&quot;=dword:00000001</code></pre>
+<script src="../../static/js/content_text.js"></script>
+
+<h4 id="验证系统是否支持tls12、tls13">Verify whether the system supports tls1.2 and tls1.3</h4>
+<p>PowerShell open:</p>
+<pre><code>[Net.ServicePointManager]::SecurityProtocol[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Ssl3 -bor [Net.SecurityProtocolType]::Tls -bor [Net.SecurityProtocolType]::Tls11 -bor [Net.SecurityProtocolType]::Tls12</code></pre>
+<p>The first line of code supports TLS version, and the second line of code modifies TLS support</p>
+<h2 id="解决办法三">Solution 3</h2>
+<blockquote>
+<p>Neither of the first two methods can work. The only way to do this is to upgrade your system to windows 10.</p>
+</blockquote>
+<hr>
+<h2 id="其他参考内容一">Other references I</h2>
+<p><a href="/">/link?id=554500000064525499ca08d90a346844</a></p>
+<p>Solutions exist, but they depend on the Framework version:</p>
+<p>. net 4.6 and later. You do not need to do any other work to support TLS 1.2, which is supported by default.</p>
+<p>.NET 4.5。 TLS 1.2 is supported, but it is not the default protocol. You need to choose to use it. The following code sets TLS 1.2 as the default, make sure to execute it before connecting to a secure resource:</p>
+<pre><code>ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12</code></pre>
+<p>.NET 4.0。 TLS 1.2 is not supported, but if. Net 4.5 (or later) is installed on the system, you can still choose to use TLS 1.2 even if your application framework does not support TLS 1.2. The only problem is that the securityprotocoltype in. Net 4.0 does not have an entry for tls1.2, so we must use the numeric representation of this enumeration value:</p>
+<pre><code>ServicePointManager.SecurityProtocol =（SecurityProtocolType）3072;</code></pre>
+<p>. net 3.5 or earlier. TLS 1.2 (*) is not supported and there is no workaround. Upgrade your application to the latest version of the framework.</p>
+<p>PS for scenario 3, there is also a registry hacker. By default, TLS 1.2 will be enforced for 4.5 without being enforced programmatically. PPS as Microsoft&#39;s Christian pop mentioned below,. Net 3.5 has the latest patch available that enables tls1.2 support.</p>
+<p>See:</p>
+<ul>
+<li>KB3154518 – Reliability Rollup HR-1605 – NDP 2.0 SP2 – Win7 SP1/Win 2008 R2 SP1</li>
+<li>KB3154519 – Reliability Rollup HR-1605 – NDP 2.0 SP2 – Win8 RTM/Win 2012 RTM</li>
+<li>KB3154520 – Reliability Rollup HR-1605 – NDP 2.0 SP2 – Win8.1RTM/Win 2012 R2 RTM</li>
+<li>KB3156421 -1605 HotFix Rollup through Windows Update for Windows 10.</li>
+</ul>
+<script src="../../static/js/content_text.js"></script>
+
+<h2 id="其他参考内容二">Other references II</h2>
+<p>The length of the certificate key provided by the website may be 512 bits. According to the current industry standard, it should contain a public key of no less than 2048 bits. Microsoft&#39;s security update in September 2016 responded to this problem. If the public key length is less than 2048 bytes (such as RSA 512),<code>Windows can cancel HTTPS connections</code></p>
+<h5 id="安装的更新有">The updates installed are</h5>
+<p>2012 R2 and Windows 8</p>
+<ul>
+<li>KB3185331</li>
+<li>KB3188743</li>
+<li>KB3174644</li>
+</ul>
+<p>2008 R2 and Windows 7</p>
+<ul>
+<li>KB3185278</li>
+<li>KB3185330</li>
+<li>KB3192391</li>
+<li>KB3175024</li>
+<li>KB3172605</li>
+</ul>
+<script src="../../static/js/content_text.js"></script>
+
+<ul>
+<li>This paper consists of<a href="../../product/index.html" target="_blank" rel="nofollow" target="_blank">Flying rabbit Download</a>Collection and sorting. The content comes from the Internet. Please indicate the source for reprint. Thank you.</li>
+</ul>
+
+
+                    <div style="padding-top: 20px;border-top: 1px dotted #F44336;    margin-top: 28px;">
+                                <div>
+                                    <span>Previous:</span><a href="../zixun/xftzzxzgw.html">Little flying rabbit download | free version | cracked version | green version | registration code | registration code generator</a>
+                                </div>
+
+                                <div>
+                                    <span>Next:</span><a href="../zixun/integrity-crossorigin.html">Integrity and crossrigin fields in the link tag</a>
+                                </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+    
+
+<div class="footerBottom">
+    <div class="w1200">
+        <div class="bottomProduct">
+            <a href="../../product/index.html">Flying rabbit Download</a>
+            <a href="index.html">Software tutorial</a>
+            <a href="../zixun/index.html">Relevant information</a>
+            <a href="../../buy.html" title="购买专业版">Buy professional</a>
+            <a href="../../login.html">Member login</a>
+            <a href="../../page/customedition.html">Service</a>
+            <a href="../../doc/views/doc/index.html" title="教程文档">Tutorial documentation</a>
+            <a href="../../page/contact.html">Contact us</a>
+        </div>
+        <div class="bottonRow">Software application: front end template download; Development design; SEO optimization; Browse the web offline. Note: this software is not a hacker program and cannot download background data!</div>
+        <div class="bottonRow">Disclaimer: the service is used for personal learning, research or appreciation, as well as other non-commercial or non-profit purposes. However, it shall comply with the provisions of copyright law and other relevant laws, and shall not infringe the legitimate rights of this website and relevant obligees. The risks arising from the use of tools on this website have nothing to do with this software.</div>
+        <div class="bottonRow">Copyright  &#169;  2019-2021 all rights reserved<a href="/" target="_blank" style="color: #8e8e8f;">Yue ICP Bei No. 19111427-2</a></div>
+        <div>
+            <a href="../index.html" target="_blank" style="color: #8e8e8f;">News</a>
+            <a href="../../doc/index.html" target="_blank" style="color: #8e8e8f;">Doc</a>
+            <a href="../../topic/index.html" target="_blank" style="color: #8e8e8f;">Website topics</a>
+        </div>
+    </div>
+</div>
+
+        <div id="kefuGajian"></div>
+
+
+
+    
+
+    <script src="../../static/js/jquery-3.3.1.min.js"></script>
+    <script src="../../static/js/chunck.js"></script>
+    <script src="../../static/js/common.js"></script>
+
+    
+            <script>
+                $(function() {
+                    $.post('/api/Count/News/16eb0000-00a4-5254-365f-08d84800de7f');
+                });
+            </script>
+
+
+            <div style="display: none;">
+                
+            </div>
+
+</body>
+</html>

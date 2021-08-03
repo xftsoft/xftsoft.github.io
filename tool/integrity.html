@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html">
+    <title>Integrity generator | resource integrity generator | Sri hash generator</title>
+    <meta name="Keywords" content="Integrity, crossorigin, integrity generator, resource integrity generator, Sri hash generator">
+    <meta name="Description" content="Integrity: sub resource integrity (SRI) is a security function that is passed without unexpected operations. Its working principle is to allow you to provide an encrypted hash / hash that the obtained file must match, so that the browser can verify the file it grabs (for example, from a CDN). Crossrigin: this enumeration attribute specifies whether CORS must be used when loading relevant pictures.">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="shortcut icon" href="https://www.xftsoft.com/favicon.ico">
+    
+    
+
+    <link href="../static/css/tool.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    <div class="topHeader divcenter">
+    <div class="next">
+        <a href="../index.html">home</a>
+        <a href="">Integrity generator</a>
+        <a href="submitToBaidu.html">Baidu included website submission tool</a>
+        <a href="verificationImage.html">Identify the real extension of the picture</a>
+        <a href="siteUrl.html">Whole site URL generator</a>
+    </div>
+</div>
+
+    
+
+
+
+<div class="divcenter">
+    <div class="title">Integrity generator (SRI hash generator)</div>
+</div>
+
+<div class="divcenter">
+    <div class="content">
+        <form action="/tool/integrity" method="post">
+            <div class="divrow clearfix">
+                <div class="divrow1">Encryption method:</div>
+                <div class="divrow2">
+                    <select class="control" name="sha" id="sha">
+                                <option value="256">sha256</option>
+                                <option value="384" selected="selected">Sha384 (recommended)</option>
+                                <option value="512">sha512</option>
+
+                    </select>
+                    <a href="javascript:;" class="ml20 blue" id="jslink">CSS test address</a>
+                    <a href="javascript:;" class="ml20 blue" id="csslink">To a JS test address</a>
+                </div>
+            </div>
+            <div class="divrow clearfix">
+                <div class="divrow1">Link address:</div>
+                <div class="divrow2">
+                    <input type="text" class="control" id="url" name="url" placeholder="请输入js或css链接地址">
+                </div>
+            </div>
+            <div class="divrow clearfix">
+                <div class="divrow1"></div>
+                <div class="divrow2">
+                    <button type="submit" id="btnGene" class="control">generate</button>
+                </div>
+            </div>
+        </form>
+
+
+    </div>
+    
+    <div class="remark">
+        <div><b>1. What is resource integrity?</b></div>
+        <div>Sub resource integrity (SRI) is a security feature that allows browsers to verify that files they grab (for example, from a CDN) are passed without unexpected operations. It works by allowing you to provide an encrypted hash / hash that the obtained file must match.</div>
+        <div><b>2、crossorigin</b></div>
+        <div>This enumeration property specifies whether CORS must be used when loading related pictures. Desirable values include the following two:<br>-Anonymous: a cross domain request will be initiated (i.e. including origin: HTTP header). However, no authentication information will be sent (that is, cookies, X.509 certificates and HTTP basic authentication information will not be sent). If the server does not give the origin certificate (access control allow origin: HTTP header is not set), this picture will be polluted and restricted.<br>-Use credentials: it will initiate a cross domain request with authentication information (sending cookies, X.509 certificates and HTTP basic authentication information) (i.e. including origin: HTTP header). If the server does not give the origin credentials (access control allow origin: HTTP header is not set), this picture will be contaminated and restricted. - when this property is not set, The resource will not be loaded by CORS (i.e. the origin: HTTP header will not be sent), which will prevent it from being used in the element. If an illegal value is set, anonymous is considered to be used</div>
+        <div><b>3. Browser compatibility</b></div>
+        <div>Chrome 45 or above, Firefox 43 or above, edge 17 or above, Safari 11 or above, opera 32 or above</div>
+        <div>Refer to official documents:<a href="/" target="_blank">https://www.w3.org/TR/SRI/</a></div>
+    </div>
+</div>
+
+    
+
+<div class="footer">Copyright  &#169; Flying rabbit tools 2019-2021</div>
+
+        <link href="../static/css/kefu.css" rel="stylesheet">
+        <div id="kefuGajian"></div>
+
+
+    <script src="../static/js/jquery-3.3.1.min.js"></script>
+    <script src="../static/js/tool.js"></script>
+
+    
+    <script>
+        $(function () {
+            $('#jslink').on('click',
+                function () {
+                    $('#url').val('../static/css/bootstrap.min2.css');
+                    $("#btnGene").click();
+                });
+            $('#csslink').on('click',
+                function () {
+                    $('#url').val('../static/js/bootstrap.min.js');
+                    $("#btnGene").click();
+                });
+            $("#sha").on('change',
+                function () {
+                    $("#btnGene").click();
+                });
+            $("#btnGene").on('click',
+                function () {
+                    if ($('#url').val() === '') {
+                        $('#url').focus();
+                        return false;
+                    }
+                    return true;
+                });
+        });
+    </script>
+
+            <div style="display: none;">
+                
+            </div>
+
+</body>
+</html>
