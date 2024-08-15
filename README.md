@@ -1,6 +1,4 @@
-# xftsoft.github.io
-小飞兔下载
-
+# 小飞兔网址
 
 本站：[https://xftsoft.github.io/](https://xftsoft.github.io/)
 
