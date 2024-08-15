@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,8 +10,8 @@
     <meta name="Description" content="Xiaofeitu download () is a software that can download a website by entering a website. It can download the web pages you want from the Internet. It is mainly used to quickly build a website, deeply analyze a website, clone a website, browse offline, etc.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="shortcut icon" href="https://www.xftsoft.com/favicon.ico">
-    
-    
+
+
 
     <link rel="stylesheet" href="../static/css/bootstrap.min.css">
     <link rel="stylesheet" href="../static/css/body.css">
@@ -22,311 +21,336 @@
     <link rel="stylesheet" href="../static/css/default.css">
     <link rel="stylesheet" href="../static/css/mobile.css">
 
-    
+
 
 </head>
 
 <body class="drawer drawer--right">
-            <div id="tipMsg" style="display: none;"></div>
+    <div id="tipMsg" style="display: none;"></div>
 
 
     <header role="banner" class="nav" style="display: none;">
-    <button type="button" class="drawer-toggle drawer-hamburger">
+        <button type="button" class="drawer-toggle drawer-hamburger">
         <span class="sr-only">toggle navigation</span>
         <span class="drawer-hamburger-icon"></span>
     </button>
-    <nav class="drawer-nav" role="navigation">
-        <ul class="drawer-menu">
-            <li><a class="drawer-menu-item" href="../index.html"><i class="iconfont iconshouye"></i>home</a></li>
-            <li><a class="drawer-menu-item" href=""><i class="iconfont iconproduct"></i>Products</a></li>
-            <li><a class="drawer-menu-item" href="../news/index.html"><i class="iconfont iconjiaocheng"></i>News</a></li>
-            <li><a class="drawer-menu-item" href="../buy.html"><i class="iconfont icongoumai"></i>Buy professional</a></li>
-            <li><a class="drawer-menu-item" href="../login.html"><i class="iconfont icondenglu"></i>Member login</a></li>
-            <li><a class="drawer-menu-item" href="../page/customedition.html"><i class="iconfont icondingzhifangan"></i>Service</a></li>
-            <li><a class="drawer-menu-item" href="../doc/index.html"><i class="iconfont iconxinwen"></i>Doc</a></li>
-            <li><a class="drawer-menu-item" href="../page/contact.html"><i class="iconfont iconlianxi"></i>Contact us</a></li>
-            <li><a class="drawer-menu-item" href="https://www.xftsoft.com/" target="_blank"><i class="iconfont iconlianxi"></i>中文站</a></li>
-        </ul>
-    </nav>
-</header>
-<div id="zzxz" class="top w1200">
-    <div class="top_a fl">
-        <a href="../index.html"></a>
+        <nav class="drawer-nav" role="navigation">
+            <ul class="drawer-menu">
+                <li><a class="drawer-menu-item" href="../index.html"><i class="iconfont iconshouye"></i>home</a></li>
+                <li><a class="drawer-menu-item" href=""><i class="iconfont iconproduct"></i>Products</a></li>
+                <li><a class="drawer-menu-item" href="../news/index.html"><i class="iconfont iconjiaocheng"></i>News</a></li>
+                <li><a class="drawer-menu-item" href="../buy.html"><i class="iconfont icongoumai"></i>Buy professional</a></li>
+                <li><a class="drawer-menu-item" href="../login.html"><i class="iconfont icondenglu"></i>Member login</a></li>
+                <li><a class="drawer-menu-item" href="../page/customedition.html"><i class="iconfont icondingzhifangan"></i>Service</a></li>
+                <li><a class="drawer-menu-item" href="../doc/index.html"><i class="iconfont iconxinwen"></i>Doc</a></li>
+                <li><a class="drawer-menu-item" href="../page/contact.html"><i class="iconfont iconlianxi"></i>Contact us</a></li>
+                <li><a class="drawer-menu-item" href="https://www.xftsoft.com/" target="_blank"><i class="iconfont iconlianxi"></i>中文站</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="zzxz" class="top w1200">
+        <div class="top_a fl">
+            <a href="../index.html"></a>
+        </div>
+        <div class="top_b fr">
+            <ul class="fl">
+                <li>
+                    <a href="../index.html">home</a>
+                </li>
+                <li>
+                    <a href="">Products</a>
+                </li>
+                <li>
+                    <a href="../news/index.html">News</a>
+                </li>
+                <li>
+                    <a href="../buy.html">Buy professional</a>
+                </li>
+                <li>
+                    <a href="../login.html">Member login</a>
+                </li>
+                <li>
+                    <a href="../page/customedition.html">Service</a>
+                </li>
+                <li>
+                    <a href="../doc/index.html" target="_blank">Doc</a>
+                </li>
+                <li>
+                    <a href="../page/contact.html">Contact us</a>
+                </li>
+                <li>
+                    <a href="https://www.xftsoft.com/" target="_blank">中文站</a>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </div>
     </div>
-    <div class="top_b fr">
-        <ul class="fl">
-            <li>
-                <a href="../index.html">home</a>
-            </li>
-            <li>
-                <a href="">Products</a>
-            </li>
-            <li>
-                <a href="../news/index.html">News</a>
-            </li>
-            <li>
-                <a href="../buy.html">Buy professional</a>
-            </li>
-            <li>
+
+
+
+
+
+
+    <style>
+        .productContent a {
+            color: #007bff;
+        }
+        
+        .productContent img {
+            max-width: 100%;
+        }
+        
+        #leftProductList {
+            background: #fff;
+        }
+    </style>
+
+    <div class="pathBody">
+        <div class="path">
+            <i class="iconfont iconshouye"></i><a href="../index.html">home</a><i class="iconfont iconyoujiantou"></i><span>Products</span>
+        </div>
+    </div>
+
+    <div class="container w1200 bodycontent">
+        <div class="row">
+            <div class="col-md-3 newlist pr" id="leftProductList">
+                <div class="newsboth">
+                    <div class="newsTitle"><i class="iconfont iconfenlei3" style="    margin-right: 8px;"></i>Product list</div>
+                    <div class="newsbody category products">
+                        <div>
+                            <i class="iconfont iconproduct"></i><a href="">Flying rabbit Download</a>
+                        </div>
+                        <div>
+                            <i class="iconfont iconproduct"></i><a href="mall-h5.html">Mall - H5 version</a>
+                        </div>
+                        <div>
+                            <i class="iconfont iconproduct"></i><a href="mall-mp.html">Mall - applet version</a>
+                        </div>
+                        <div>
+                            <i class="iconfont iconproduct"></i><a href="iis.html">Create IIS site (dev version)</a>
+                        </div>
+                        <div>
+                            <i class="iconfont iconproduct"></i><a href="qiyexx.html">website platform</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9 newlist pl">
+                <div class="newsboth">
+                    <div class="newsTitle"><i class="iconfont iconfenlei1" style="font-size: 16px;margin-right: 8px;"></i>Flying rabbit Download</div>
+                    <div class="newsbody productContent">
+
+                        <style>
+                            .demourl .sem {
+                                background: #ffeb3bb5;
+                                padding: 0px 6px;
+                                margin: 0 5px;
+                                border-radius: 2px;
+                                display: inline-block;
+                                line-height: 20px;
+                                height: 20px;
+                            }
+                            
+                            .diffby {
+                                color: #607d8b !important;
+                                background-color: #e4e4e4;
+                                border: 1px solid #607d8b;
+                                padding: 3px 5px 0px 5px;
+                                line-height: 22px;
+                                display: inline-block;
+                                font-size: 14px !important;
+                            }
+                            
+                            .addCon {
+                                font-family: "iconfont" !important;
+                                font-size: 16px;
+                                font-style: normal;
+                                -webkit-font-smoothing: antialiased;
+                            }
+                            
+                            .addCon:after {
+                                content: "\e648";
+                                box-sizing: border-box;
+                            }
+                        </style>
+
+                        <h3 id="Flying Rabbit Downloadvxftversion">Flying rabbit Download<span style="font-size: 14px;color: #999;margin-left: 8px;">V15.0</span></h3>
+                        <div class="demourl">
+                            <div>
+
+                                <a href="https://www.xftsoft.com/download" rel="nofollow" download="xft" class="btn btn-primary btn-lg" style=" color: #fff;" target="_blank">
+                                    <i class="iconfont iconxiazai1 downloadadm" style="font-size: 20px;"></i>
+                                    <span>Download Now 1</span>
+                                </a>
+                                <a href="https://xft.fzxgj.top/dl" rel="nofollow" download="xft" class="btn btn-primary btn-lg" style=" color: #fff;" target="_blank">
+                                    <i class="iconfont iconxiazai1 downloadadm" style="font-size: 20px;"></i>
+                                    <span>Download Now 2</span>
+                                </a>
+
+                                <i style="color:#999;">Unable to download compressed package? Please tell us, thank you!!!</i>
+                            </div>
+                            <div>Software size: 1.4MB</div>
+                            <div>Updated on: May 5, 2021</div>
+                            <div>Check MD5: 355c8fa6d42e1fc93347ac147cfac146</div>
+                            <div style="color: red;">Tip: after downloading, it is a zip compressed package, which needs to be used<span class="sem">winRAR</span>或<span class="sem">360 compression</span>Unzip to a folder, and then double-click in the folder to open it<span class="sem">Flying rabbit download.exe</span>Run
+                                the program.</div>
+                            <div>
+                                <a href="../buy.html" target="_blank" class="addCon diffby">Function comparison between free version and professional version</a>
+                            </div>
+                        </div>
+
+                        <h3 id="软件报错及解决方法">Software error reporting and Solutions</h3>
+                        <p></p>
+
+                        <h5 id="一、运行环境没有安装">1、 The operating environment is not installed</h5>
+                        <ul>
+                            <li>
+                                <p>Windows Server 2008 R2 and above | Windows 7 and above</p>
+                            </li>
+                            <li>
+                                <p>The running environment is Microsoft. Net framework. If it is not installed, it will be reported as follows</p>
+                            </li>
+                            <li>
+                                <p>Download and install Microsoft. Net framework 4.6:<a href="javascript:;" onclick="javascript:window.open('https://download.microsoft.com/download/C/3/A/C3A5200B-D33C-47E9-9D70-2F7C65DAAD94/NDP46-KB3045557-x86-x64-AllOS-ENU.exe');return false;"
+                                        rel="nofollow" target="_blank">https://download.microsoft.com/download/C/3/A/C3A5200B-D33C-47E9-9D70-2F7C65DAAD94/NDP46-KB3045557-x86-x64-AllOS-ENU.exe</a></p>
+                            </li>
+                        </ul>
+                        <img src="../static/picture/err2.png" style="border: 5px dashed #FF5722;">
+
+                        <p><br></p>
+
+                        <h5 id="二、应用程序无法正常启动0xc000007b">2、 The application cannot start normally (0xc000007b)</h5>
+                        <img src="../static/picture/err1.png" style="border: 5px dashed #FF5722;">
+
+                        <ul>
+                            <li>Download and install the DirectX repair tool:<a href="javascript:;" onclick="javascript:window.open('https://dl.pconline.com.cn/download/360074-1.html');return false;" rel="nofollow" target="_blank">https://dl.pconline.com.cn/download/360074-1.html</a></li>
+                        </ul>
+                        <p><br></p>
+
+                        <h5 id="三、尝试从一个网络位置加载程序集，在早期版本的-net-framework-中，这会导致对该程序集进行沙盒处理。">3、 An attempt was made to load an assembly from a network location, which in earlier versions of the. Net framework resulted in sandbox processing of the assembly.</h5>
+                        <blockquote>
+                            <p>An attempt was made to load an assembly from a network location, which in earlier versions of the. Net framework resulted in sandbox processing of the assembly. The. Net framework for this release does not enable CAS policy
+                                by default, so this load can be dangerous. If this load is not intended to sandbox the assembly, enable the loadfromremotesources switch.</p>
+                        </blockquote>
+                        <img src="../static/picture/cas.png" style="border: 5px dashed #FF5722;">
+
+                        <ul>
+                            <li>Some computers appear and have been repaired. Just download the software again.</li>
+                        </ul>
+                        <p><br></p>
+
+                        <h5 id="四、杀毒软件报毒问题">4、 Virus reporting problem of anti-virus software</h5>
+                        <ul>
+                            <li>This software has no virus.</li>
+                            <li>Since the hardware number needs to be read when the software generates the machine code, resulting in some anti-virus software reporting virus, we suggest adding the software to the white list or closing the anti-virus software
+                                before running the software.</li>
+                        </ul>
+                        <p><br></p>
+
+                        <h3 id="检查运行环境是否安装成功">Check whether the running environment is installed successfully</h3>
+                        <ul>
+                            <li>By combining shortcut keys<code>WIN+R</code>Or start menu, enter search<code>cmd</code>Press enter to open the CMD command window and paste the following code
+                                <blockquote>
+                                    <p><span style="background: #e6e6e6;padding: 2px 5px;display: inline-block;border-radius: 3px;">reg query &quot;HKLM\Software\Microsoft\NET Framework Setup\NDP&quot; /s /v version | findstr /i version | sort /+26 /r</span></p>
+                                    <img src="../static/picture/chengver.png" style="border: 3px solid #1b7bd2; border-radius: 8px; max-width:100%;"></blockquote>
+                            </li>
+                            <li>As shown in the figure, if the installed version is &gt; 4.6, the running environment is installed</li>
+                        </ul>
+                        <p><br></p>
+
+                        <h3 id="软件截图">Software screenshot</h3>
+                        <img src="../static/picture/V13_1.png" style="border: 2px solid #1b7bd2; border-radius: 6px; max-width:100%;">
+
+                        <p><br></p>
+
+                        <h3 id="软件介绍">Software introduction</h3>
+                        <p>Little flying rabbit download is a software that can download a website by entering a website. It can download the web page you want from the Internet. It is mainly used to quickly build a website, in-depth analysis website, website
+                            cloning, offline browsing, etc.</p>
+                        <p><strong>Four functions of the software:</strong>Whole station download, web page batch download, whole station batch download, whole station picture download</p>
+                        <p><strong>characteristic:</strong>Convert website codes, customize special labels, intelligently identify links, visual operation of built-in browser, simple and complex mutual conversion, English web page translation, batch replacement
+                            and deletion of codes, etc</p>
+                        <p><br></p>
+
+                        <h3 id="使用文档">Working with documents</h3>
+                        <p><a href="../doc/views/doc/index.html">/doc/views/doc/</a></p>
+                        <p></p>
+
+                        <h3 id="软件网站">Software website</h3>
+                        <p><a href="../index.html">/</a></p>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="footerBottom">
+        <div class="w1200">
+            <div class="bottomProduct">
+                <a href="">Flying rabbit Download</a>
+                <a href="../news/jiaocheng/index.html">Software tutorial</a>
+                <a href="../news/zixun/index.html">Relevant information</a>
+                <a href="../buy.html" title="购买专业版">Buy professional</a>
                 <a href="../login.html">Member login</a>
-            </li>
-            <li>
                 <a href="../page/customedition.html">Service</a>
-            </li>
-            <li>
-                <a href="../doc/index.html" target="_blank">Doc</a>
-            </li>
-            <li>
+                <a href="../doc/views/doc/index.html" title="教程文档">Tutorial documentation</a>
                 <a href="../page/contact.html">Contact us</a>
-            </li>
-            <li>
-                <a href="https://www.xftsoft.com/" target="_blank">中文站</a>
-            </li>
-        </ul>
-        <div class="clear"></div>
-    </div>
-</div>
-
-
-    
-
-
-
-<style>
-    .productContent a {
-        color: #007bff;
-    }
-
-    .productContent img {
-        max-width: 100%;
-    }
-
-    #leftProductList {
-        background: #fff;
-    }
-</style>
-
-<div class="pathBody">
-    <div class="path">
-        <i class="iconfont iconshouye"></i><a href="../index.html">home</a><i class="iconfont iconyoujiantou"></i><span>Products</span>
-    </div>
-</div>
-
-<div class="container w1200 bodycontent">
-    <div class="row">
-        <div class="col-md-3 newlist pr" id="leftProductList">
-            <div class="newsboth">
-                <div class="newsTitle"><i class="iconfont iconfenlei3" style="    margin-right: 8px;"></i>Product list</div>
-                <div class="newsbody category products">
-                            <div>
-                                <i class="iconfont iconproduct"></i><a href="">Flying rabbit Download</a>
-                            </div>
-                            <div>
-                                <i class="iconfont iconproduct"></i><a href="mall-h5.html">Mall - H5 version</a>
-                            </div>
-                            <div>
-                                <i class="iconfont iconproduct"></i><a href="mall-mp.html">Mall - applet version</a>
-                            </div>
-                            <div>
-                                <i class="iconfont iconproduct"></i><a href="iis.html">Create IIS site (dev version)</a>
-                            </div>
-                            <div>
-                                <i class="iconfont iconproduct"></i><a href="qiyexx.html">website platform</a>
-                            </div>
-
-                </div>
+            </div>
+            <div class="bottonRow">Software application: front end template download; Development design; SEO optimization; Browse the web offline. Note: this software is not a hacker program and cannot download background data!</div>
+            <div class="bottonRow">Disclaimer: the service is used for personal learning, research or appreciation, as well as other non-commercial or non-profit purposes. However, it shall comply with the provisions of copyright law and other relevant laws, and shall not infringe
+                the legitimate rights of this website and relevant obligees. The risks arising from the use of tools on this website have nothing to do with this software.</div>
+            <div class="bottonRow">Copyright &#169; 2019-2021 all rights reserved<a href="/" target="_blank" style="color: #8e8e8f;">Yue ICP Bei No. 19111427-2</a></div>
+            <div>
+                <a href="../news/index.html" target="_blank" style="color: #8e8e8f;">News</a>
+                <a href="../doc/index.html" target="_blank" style="color: #8e8e8f;">Doc</a>
+                <a href="../topic/index.html" target="_blank" style="color: #8e8e8f;">Website topics</a>
             </div>
         </div>
-        <div class="col-md-9 newlist pl">
-            <div class="newsboth">
-                <div class="newsTitle"><i class="iconfont iconfenlei1" style="font-size: 16px;margin-right: 8px;"></i>Flying rabbit Download</div>
-                <div class="newsbody productContent">
-
-                    <style>
-.demourl .sem {
-    background: #ffeb3bb5;
-    padding: 0px 6px;
-    margin: 0 5px;
-    border-radius: 2px;
-    display: inline-block;
-    line-height: 20px;
-    height: 20px;
-}
-.diffby{
-    color: #607d8b !important;
-    background-color: #e4e4e4;
-    border: 1px solid #607d8b;
-    padding: 3px 5px 0px 5px;
-    line-height: 22px;
-    display: inline-block;
-    font-size: 14px !important;
-}
-.addCon{
-        font-family: "iconfont" !important;
-    font-size: 16px;
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-}
-.addCon:after{
-            content: "\e648";
-            box-sizing: border-box;
-}
-</style>
-
-<h3 id="Flying Rabbit Downloadvxftversion">Flying rabbit Download<span style="font-size: 14px;color: #999;margin-left: 8px;">V15.0</span></h3>
-<div class="demourl">
-        <div>
-                <a href="https://www.xftsoft.com/download" rel="nofollow" download="xft" class="btn btn-primary btn-lg" style=" color: #fff;" target="_blank">
-                <i class="iconfont iconxiazai1 downloadadm" style="font-size: 20px;"></i>
-                <span>Download Now</span>
-                </a>
-                <i style="color:#999;">Unable to download compressed package? Please tell us, thank you!!!</i>
-        </div>
-        <div>Software size: 1.4MB</div>
-        <div>Updated on: May 5, 2021</div>
-        <div>Check MD5: 355c8fa6d42e1fc93347ac147cfac146</div>
-        <div style="color: red;">Tip: after downloading, it is a zip compressed package, which needs to be used<span class="sem">winRAR</span>或<span class="sem">360 compression</span>Unzip to a folder, and then double-click in the folder to open it<span class="sem">Flying rabbit download.exe</span>Run the program.</div>
-        <div>
-            <a href="../buy.html" target="_blank" class="addCon diffby">Function comparison between free version and professional version</a>
-        </div>
-</div>
-
-<h3 id="软件报错及解决方法">Software error reporting and Solutions</h3>
-<p></p>
-
-<h5 id="一、运行环境没有安装">1、 The operating environment is not installed</h5>
-<ul>
-<li><p>Windows Server 2008 R2 and above | Windows 7 and above</p>
-</li>
-<li><p>The running environment is Microsoft. Net framework. If it is not installed, it will be reported as follows</p>
-</li>
-<li><p>Download and install Microsoft. Net framework 4.6:<a href="javascript:;" onclick="javascript:window.open('https://download.microsoft.com/download/C/3/A/C3A5200B-D33C-47E9-9D70-2F7C65DAAD94/NDP46-KB3045557-x86-x64-AllOS-ENU.exe');return false;" rel="nofollow" target="_blank">https://download.microsoft.com/download/C/3/A/C3A5200B-D33C-47E9-9D70-2F7C65DAAD94/NDP46-KB3045557-x86-x64-AllOS-ENU.exe</a></p>
-</li>
-</ul>
-<img src="../static/picture/err2.png" style="border: 5px dashed #FF5722;">
-
-<p><br></p>
-
-<h5 id="二、应用程序无法正常启动0xc000007b">2、 The application cannot start normally (0xc000007b)</h5>
-<img src="../static/picture/err1.png" style="border: 5px dashed #FF5722;">
-
-<ul>
-<li>Download and install the DirectX repair tool:<a href="javascript:;" onclick="javascript:window.open('https://dl.pconline.com.cn/download/360074-1.html');return false;" rel="nofollow" target="_blank">https://dl.pconline.com.cn/download/360074-1.html</a></li>
-</ul>
-<p><br></p>
-
-<h5 id="三、尝试从一个网络位置加载程序集，在早期版本的-net-framework-中，这会导致对该程序集进行沙盒处理。">3、 An attempt was made to load an assembly from a network location, which in earlier versions of the. Net framework resulted in sandbox processing of the assembly.</h5>
-<blockquote>
-<p>An attempt was made to load an assembly from a network location, which in earlier versions of the. Net framework resulted in sandbox processing of the assembly. The. Net framework for this release does not enable CAS policy by default, so this load can be dangerous. If this load is not intended to sandbox the assembly, enable the loadfromremotesources switch.</p>
-</blockquote>
-<img src="../static/picture/cas.png" style="border: 5px dashed #FF5722;">
-
-<ul>
-<li>Some computers appear and have been repaired. Just download the software again.</li>
-</ul>
-<p><br></p>
-
-<h5 id="四、杀毒软件报毒问题">4、 Virus reporting problem of anti-virus software</h5>
-<ul>
-<li>This software has no virus.</li>
-<li>Since the hardware number needs to be read when the software generates the machine code, resulting in some anti-virus software reporting virus, we suggest adding the software to the white list or closing the anti-virus software before running the software.</li>
-</ul>
-<p><br></p>
-
-<h3 id="检查运行环境是否安装成功">Check whether the running environment is installed successfully</h3>
-<ul>
-<li>By combining shortcut keys<code>WIN+R</code>Or start menu, enter search<code>cmd</code>Press enter to open the CMD command window and paste the following code<blockquote>
-<p><span style="background: #e6e6e6;padding: 2px 5px;display: inline-block;border-radius: 3px;">reg query &quot;HKLM\Software\Microsoft\NET Framework Setup\NDP&quot; /s /v version | findstr /i version | sort /+26 /r</span></p>
-<img src="../static/picture/chengver.png" style="border: 3px solid #1b7bd2; border-radius: 8px; max-width:100%;"></blockquote>
-</li>
-<li>As shown in the figure, if the installed version is &gt; 4.6, the running environment is installed</li>
-</ul>
-<p><br></p>
-
-<h3 id="软件截图">Software screenshot</h3>
-<img src="../static/picture/V13_1.png" style="border: 2px solid #1b7bd2; border-radius: 6px; max-width:100%;">
-
-<p><br></p>
-
-<h3 id="软件介绍">Software introduction</h3>
-<p>Little flying rabbit download is a software that can download a website by entering a website. It can download the web page you want from the Internet. It is mainly used to quickly build a website, in-depth analysis website, website cloning, offline browsing, etc.</p>
-<p><strong>Four functions of the software:</strong>Whole station download, web page batch download, whole station batch download, whole station picture download</p>
-<p><strong>characteristic:</strong>Convert website codes, customize special labels, intelligently identify links, visual operation of built-in browser, simple and complex mutual conversion, English web page translation, batch replacement and deletion of codes, etc</p>
-<p><br></p>
-
-<h3 id="使用文档">Working with documents</h3>
-<p><a href="../doc/views/doc/index.html">/doc/views/doc/</a></p>
-<p></p>
-
-<h3 id="软件网站">Software website</h3>
-<p><a href="../index.html">/</a></p>
-
-
-                </div>
-            </div>
-
-        </div>
     </div>
-</div>
 
-
-    
-
-<div class="footerBottom">
-    <div class="w1200">
-        <div class="bottomProduct">
-            <a href="">Flying rabbit Download</a>
-            <a href="../news/jiaocheng/index.html">Software tutorial</a>
-            <a href="../news/zixun/index.html">Relevant information</a>
-            <a href="../buy.html" title="购买专业版">Buy professional</a>
-            <a href="../login.html">Member login</a>
-            <a href="../page/customedition.html">Service</a>
-            <a href="../doc/views/doc/index.html" title="教程文档">Tutorial documentation</a>
-            <a href="../page/contact.html">Contact us</a>
-        </div>
-        <div class="bottonRow">Software application: front end template download; Development design; SEO optimization; Browse the web offline. Note: this software is not a hacker program and cannot download background data!</div>
-        <div class="bottonRow">Disclaimer: the service is used for personal learning, research or appreciation, as well as other non-commercial or non-profit purposes. However, it shall comply with the provisions of copyright law and other relevant laws, and shall not infringe the legitimate rights of this website and relevant obligees. The risks arising from the use of tools on this website have nothing to do with this software.</div>
-        <div class="bottonRow">Copyright  &#169;  2019-2021 all rights reserved<a href="/" target="_blank" style="color: #8e8e8f;">Yue ICP Bei No. 19111427-2</a></div>
-        <div>
-            <a href="../news/index.html" target="_blank" style="color: #8e8e8f;">News</a>
-            <a href="../doc/index.html" target="_blank" style="color: #8e8e8f;">Doc</a>
-            <a href="../topic/index.html" target="_blank" style="color: #8e8e8f;">Website topics</a>
-        </div>
-    </div>
-</div>
-
-        <div id="kefuGajian"></div>
+    <div id="kefuGajian"></div>
 
 
 
-    
+
 
     <script src="../static/js/jquery-3.3.1.min.js"></script>
     <script src="../static/js/chunck.js"></script>
     <script src="../static/js/common.js"></script>
 
-    
+
     <script src="../static/js/jquery-scrolltofixed-min.js"></script>
     <script>
-        $(function () {
+        $(function() {
             $('#leftProductList').scrollToFixed();
         });
     </script>
-            <script>$(function() {$.post('/api/Count/Products/08900000-2d01-02e0-2c46-08d8e84a86c2');});</script>
+    <script>
+        $(function() {
+            $.post('/api/Count/Products/08900000-2d01-02e0-2c46-08d8e84a86c2');
+        });
+    </script>
 
 
-            <div style="display: none;">
+    <div style="display: none;">
         <script>
             var _hmt = _hmt || [];
             (function() {
                 var hm = document.createElement("script");
                 hm.src = "https://hm.baidu.com/hm.js?85461db410bc94665116b1d402b29625";
-                var s = document.getElementsByTagName("script")[0]; 
+                var s = document.getElementsByTagName("script")[0];
                 s.parentNode.insertBefore(hm, s);
             })();
-            </script>
-            
+        </script>
+
     </div>
 
 </body>
+
 </html>
